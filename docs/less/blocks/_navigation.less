@@ -1,0 +1,108 @@
+.navigation {
+	float: right;
+	font-size: 14px;
+	font-family: "Lato";
+	font-weight: bold;
+	margin-top: 50px;
+	line-height: 1.143;
+	text-transform: uppercase;
+	
+	@media (min-width: 768px){
+		
+		
+	}
+	
+	.navigation__toggle {
+	font-size: 28px;
+	color: @Gold;
+	display: block;
+	right: 20px;
+	z-index: 2;
+	
+	
+	 @media (min-width: 768px){
+		display: none;
+	 }
+}	
+
+  .navigation__toggle--fixed {
+  	position: fixed;
+  }
+
+	ul.navigation__list{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		z-index: 1;
+		position: fixed;
+		
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(27,35,17, .95);
+		display: none;
+		
+		
+		
+		@media (min-width: 768px){
+		  display: block;
+		  position: relative;
+		  background: none;
+	    }
+
+	    &--open {
+	      display: flex;
+		  -webkit-justify-content: center;
+		        justify-content: center;
+		  -webkit-align-items: center;
+		        align-items: center;
+		  -webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;	
+	    }
+
+
+
+		
+		li{
+			margin: 0 0 40px;
+			padding: 0;
+			display: block;
+			
+
+			@media (min-width: 768px){
+		    margin: 0;
+			padding: 0;
+			display: inline-block;
+			margin-right: 30px;
+			
+			   &:last-child {
+				margin-right: 0;
+			   }
+			}
+		}
+	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;
+		
+		&:hover, &:focus, &:active {
+			color: @Gold;
+		}
+	}
+ }
+
+
+
+
+
+   
+
+
+
+
+
+
+
